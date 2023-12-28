@@ -1,32 +1,33 @@
-# nuxt-example
+# Vanilla Node REST API
 
-> An example project built using Nuxt
+> Full CRUD REST API using Node.js with no framework
 
-Created as a demonstration for this [blog article](http://bit.ly/2J6rvD2)
+This is for learning/experimental purposes. In most cases, you would use something like Express in a production project
 
-A static version of the site (made using `nuxt generate`) is hosted [here](https://nuxt-example.netlify.com/)
+```
+# Routes
+GET      /api/products
+POST     /api/products
+GET      /api/products/:id
+PUT      /api/products/:id
+DELETE   /api/products/:id
 
-Why not clone this repo and try it out yourself?
-
-``` bash
-git clone https://github.com/BenShelton/nuxt-example.git
 ```
 
-## Build Setup
+## Usage
 
-``` bash
-# install dependencies
-npm install # Or 'yarn'
+```
+# Install dependencies
+npm install
+yarn install
 
-# serve with hot reload at localhost:3000
+# Run in develpment
 npm run dev
+yarn run dev
 
-# build for production and launch server
-npm run build
+# Run in production
 npm start
-
-# generate static project
-npm run generate
+yarn start
 ```
 
-For detailed explanation on how things work, check out the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
+Feel free to add to this and create a PR. I plan on creating a better router, but if you'd like to do that, feel free
